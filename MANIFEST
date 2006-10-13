@@ -45,4 +45,3 @@ t/xml/Books-person_id=poe_edgar_allan.xml
 t/xml/Categories-category_id=science.xml
 t/xml/Publishers-publisher_id=oreilly.xml
 t/xml/Subjects-subject_id=perl_computer_program_language.xml
-META.yml
