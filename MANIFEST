@@ -1,0 +1,12 @@
+Build.PL
+ChangeLog
+ChangeLog.xml
+MANIFEST
+MANIFEST.SKIP
+Makefile.PL
+README
+lib/Catalyst/Model/ISBNDB.pm
+t/00_signature.t
+t/01_pod.t
+t/02_pod_coverage.t
+t/DUMMY.pm

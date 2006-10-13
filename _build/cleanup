@@ -1,0 +1,8 @@
+{
+          'META.yml' => 1,
+          '*.html' => 1,
+          't/*.log' => 1,
+          'blib' => 1,
+          'Catalyst-Model-ISBNDB-*' => 1,
+          '*.log' => 1
+        }
