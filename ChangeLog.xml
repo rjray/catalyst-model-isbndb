@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+    The schema for this namespace may be found at the following URL:
+
+    http://www.blackperl.com/XML/ChangeLog/ChangeLogML.xsd
+
+    $Id$
+-->
+<changelog xmlns="http://www.blackperl.com/XML/ChangeLog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.blackperl.com/XML/ChangeLog etc/ChangeLogML.xsd">
+  <description>
+    Revision history for the Perl extension module WebService::ISBNDB. This is
+    an API to communicate with the web service hosted by isbndb.com.
+  </description>
+  <release version="0.10" tag="v0_10" date="2006-10-12T23:02:48-06:00">
+    <change>
+      <fileset>
+        <file path="Build.PL" revision="5" />
+        <file path="ChangeLog" revision="5" />
+        <file path="ChangeLog.xml" revision="5" />
+        <file path="MANIFEST" revision="5" />
+        <file path="MANIFEST.SKIP" revision="2" />
+        <file path="Makefile.PL" revision="5" />
+        <file path="README" revision="5" />
+        <file path="etc/ChangeLogML.xsd" revision="2" />
+        <file path="lib/Catalyst/Model/ISBNDB.pm" revision="5" />
+        <file path="t/00_signature.t" revision="5" />
+        <file path="t/01_pod.t" revision="5" />
+        <file path="t/02_pod_coverage.t" revision="5" />
+        <file path="t/10_basic.t" revision="5" />
+        <file path="t/DUMMY.pm" revision="5" />
+        <file path="t/xml/Authors-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-book_id=programming_web_services_with_perl.xml" revision="2" />
+        <file path="t/xml/Books-isbn=0596002068.xml" revision="2" />
+        <file path="t/xml/Books-page_number=10-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=11-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=12-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=13-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=14-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=15-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=16-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=17-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=18-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=19-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=2-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=20-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=21-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=22-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=23-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=24-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=25-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=26-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=3-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=4-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=5-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=6-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=7-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=8-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-page_number=9-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Books-person_id=poe_edgar_allan.xml" revision="2" />
+        <file path="t/xml/Categories-category_id=science.xml" revision="2" />
+        <file path="t/xml/Publishers-publisher_id=oreilly.xml" revision="2" />
+        <file path="t/xml/Subjects-subject_id=perl_computer_program_language.xml" revision="2" />
+      </fileset>
+      <description>
+        Intial release.
+      </description>
+    </change>
+  </release>
+</changelog>

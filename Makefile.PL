@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# $Id: Makefile.PL 14 2006-09-14 09:16:01Z  $
+# $Id$
 #
 # This is the MakeMaker skeleton for Catalyst::Plugin::ISBNDB, a wrapper around
 # Module::Build.

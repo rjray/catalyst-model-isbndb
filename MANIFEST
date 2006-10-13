@@ -1,12 +1,48 @@
-Build.PL
-ChangeLog
-ChangeLog.xml
+Build.PL			# Module::Build script
+ChangeLog			# Ch-ch-ch-ch-changes
+ChangeLog.xml			# Again, but more formal
 MANIFEST
 MANIFEST.SKIP
-Makefile.PL
+Makefile.PL			# Compatibility file
 README
-lib/Catalyst/Model/ISBNDB.pm
-t/00_signature.t
+etc/ChangeLogML.xsd		# The XML Schema for ChangeLog.xml
+lib/Catalyst/Model/ISBNDB.pm	# The module
+t/00_signature.t		# Unit test suites
 t/01_pod.t
 t/02_pod_coverage.t
-t/DUMMY.pm
+t/10_basic.t
+t/DUMMY.pm			# An Agent stub for reading data from files
+# Cached data from isbndb.com, used by the test suites
+t/xml/Authors-person_id=poe_edgar_allan.xml
+t/xml/Books-book_id=programming_web_services_with_perl.xml
+t/xml/Books-isbn=0596002068.xml
+t/xml/Books-page_number=10-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=11-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=12-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=13-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=14-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=15-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=16-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=17-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=18-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=19-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=2-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=20-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=21-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=22-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=23-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=24-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=25-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=26-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=3-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=4-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=5-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=6-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=7-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=8-person_id=poe_edgar_allan.xml
+t/xml/Books-page_number=9-person_id=poe_edgar_allan.xml
+t/xml/Books-person_id=poe_edgar_allan.xml
+t/xml/Categories-category_id=science.xml
+t/xml/Publishers-publisher_id=oreilly.xml
+t/xml/Subjects-subject_id=perl_computer_program_language.xml
+META.yml

@@ -1,6 +1,5 @@
 #!/usr/bin/perl
-
-# $Id: Build.PL 34 2006-10-11 09:07:36Z  $
+# $Id$
 
 use Module::Build;
 
@@ -13,7 +12,6 @@ my $build = Module::Build->new(
     dist_author    => 'Randy J. Ray <rjray@blackperl.com>',
     dist_abstract  =>
     'Catalyst model for accessing the isbndb.com REST interface',
-    dist_version   => '0.10',
     sign           => 'here, please',
 );
 
