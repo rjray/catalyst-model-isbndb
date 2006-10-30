@@ -127,7 +127,7 @@ sub mk_compclass
     1;
 }
 
-=head2 mk_comptest($SELF, $HELPER)
+=item mk_comptest($SELF, $HELPER)
 
 Creates the unit test suite for the new model. Does this by using the
 C<Catalyst::Helper> instance pointed to by C<$HELPER>.
