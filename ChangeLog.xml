@@ -13,6 +13,22 @@
     Revision history for the Perl extension module WebService::ISBNDB. This is
     an API to communicate with the web service hosted by isbndb.com.
   </description>
+  <release version="0.20" tag="v0_20" date="2006-10-29T23:50:57-07:00">
+    <change>
+      <fileset>
+        <file path="lib/Catalyst/Helper/Model/ISBNDB.pm" action="ADD"
+              revision="7" />
+        <file path="t/00_load.t" action="ADD" revision="7" />
+        <file path="MANIFEST" revision="7" />
+      </fileset>
+      <description>
+        Added a new class, Catalyst::Helper::Model::ISBNDB, to make it easier
+        for developers to generate models for their applications based on
+        Catalyst::Model::ISBNDB. This called for new tests and a change to
+        MANIFEST.
+      </description>
+    </change>
+  </release>
   <release version="0.10" tag="v0_10" date="2006-10-12T23:02:48-06:00">
     <change>
       <fileset>

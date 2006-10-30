@@ -1,6 +1,6 @@
 Catalyst::Model::ISBNDB - Access to the isbndb.com API as a Catalyst model
 
-Version: 0.10
+Version: 0.20
 
 WHAT IS IT
 
@@ -33,4 +33,10 @@ Please send any reports of problems or bugs to rjray@blackperl.com
 
 CHANGES
 
-This is the initial release.
+lib/Catalyst/Helper/Model/ISBNDB.pm:
+t/00_load.t:
+MANIFEST:
+Added a new class, Catalyst::Helper::Model::ISBNDB, to make it easier
+for developers to generate models for their applications based on
+Catalyst::Model::ISBNDB. This called for new tests and a change to
+MANIFEST.
