@@ -1,17 +1,18 @@
-Build.PL			# Module::Build script
-ChangeLog			# Ch-ch-ch-ch-changes
-ChangeLog.xml			# Again, but more formal
+Build.PL				# Module::Build script
+ChangeLog				# Ch-ch-ch-ch-changes
+ChangeLog.xml				# Again, but more formal
 MANIFEST
 MANIFEST.SKIP
-Makefile.PL			# Compatibility file
+Makefile.PL				# Compatibility file
 README
-etc/ChangeLogML.xsd		# The XML Schema for ChangeLog.xml
-lib/Catalyst/Model/ISBNDB.pm	# The module
-t/00_signature.t		# Unit test suites
+etc/ChangeLogML.xsd			# The XML Schema for ChangeLog.xml
+lib/Catalyst/Helper/Model/ISBNDB.pm	# Catalyst::Helper component
+lib/Catalyst/Model/ISBNDB.pm		# The model
+t/00_signature.t			# Unit test suites
 t/01_pod.t
 t/02_pod_coverage.t
 t/10_basic.t
-t/DUMMY.pm			# An Agent stub for reading data from files
+t/DUMMY.pm				# Agent stub for reading from files
 # Cached data from isbndb.com, used by the test suites
 t/xml/Authors-person_id=poe_edgar_allan.xml
 t/xml/Books-book_id=programming_web_services_with_perl.xml
