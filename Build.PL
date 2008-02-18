@@ -5,12 +5,16 @@ use Module::Build;
 
 my $build = Module::Build->new(
     module_name    => 'Catalyst::Model::ISBNDB',
-    license        => 'artistic',
-    requires       => { perl => '5.6.0',
+    license        => 'perl',
+    requires       => { perl               => '5.006',
+                        NEXT               => '0.6',
+                        Catalyst::Runtime  => '5.7',
                         WebService::ISBNDB => '0.31' },
     build_requires => { Test::More => 0 },
+    # This *should* be "build_recommends", since it is only for the tests
+    recommends        => { Test::Pod => 0, Test::Pod::Coverage => 0 },
     dist_author    => 'Randy J. Ray <rjray@blackperl.com>',
-    dist_version   => '0.20',
+    dist_version   => '0.21',
     dist_abstract  =>
     'Catalyst model for accessing the isbndb.com REST interface',
     sign           => 'here, please',
