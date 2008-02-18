@@ -3,8 +3,8 @@
 # This file copyright (c) 2006 by Randy J. Ray, all rights reserved
 #
 # Copying and distribution are permitted under the terms of the Artistic
-# License as distributed with Perl versions 5.005 and later. See
-# http://language.perl.com/misc/Artistic.html
+# License 2.0 (http://www.opensource.org/licenses/artistic-license-2.0.php) or
+# the GNU LGPL (http://www.opensource.org/licenses/lgpl-license.php).
 #
 ###############################################################################
 #
@@ -26,7 +26,7 @@
 
 package WebService::ISBNDB::Agent::DUMMY;
 
-use 5.6.0;
+use 5.006;
 use strict;
 use warnings;
 no warnings 'redefine';
@@ -36,7 +36,7 @@ use base 'WebService::ISBNDB::Agent::REST';
 use File::Basename 'dirname';
 use Class::Std;
 
-$VERSION = "0.10";
+$VERSION = "0.11";
 
 BEGIN
 {
