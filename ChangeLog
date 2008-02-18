@@ -16,6 +16,11 @@ $Id$
 	to remove use of v-string, and added some overlooked dependencies in
 	the "requires" parameter.
 
+	t/00_load.t:
+	Fixed references to modules in this test. For some reason, the
+	tests referred to the ::XMLRPC Catalyst components, and no one caught
+	it.
+
 0.20	Sun Oct 29 23:50:57 MST 2006
 
 	lib/Catalyst/Helper/Model/ISBNDB.pm:
