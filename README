@@ -1,6 +1,6 @@
 Catalyst::Model::ISBNDB - Access to the isbndb.com API as a Catalyst model
 
-Version: 0.20
+Version: 0.21
 
 WHAT IS IT
 
@@ -34,9 +34,14 @@ Please send any reports of problems or bugs to rjray@blackperl.com
 CHANGES
 
 lib/Catalyst/Helper/Model/ISBNDB.pm:
-t/00_load.t:
-MANIFEST:
-Added a new class, Catalyst::Helper::Model::ISBNDB, to make it easier
-for developers to generate models for their applications based on
-Catalyst::Model::ISBNDB. This called for new tests and a change to
-MANIFEST.
+lib/Catalyst/Model/ISBNDB.pm:
+t/DUMMY.pm:
+Updated all copyright dates and license information. All license
+references are now to the dual-license arrangement (Artistic
+2.0 and LGPL). Added use of "warnings" pragma to any modules
+that didn't already have it.
+
+Build.PL:
+Updated the package version, fixed reference to required perl version
+to remove use of v-string, and added some overlooked dependencies in
+the "requires" parameter.

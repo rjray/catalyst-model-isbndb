@@ -1,6 +1,21 @@
 Revision history for Perl module Catalyst-Model-ISBNDB.
 $Id$
 
+0.21	Mon Feb 18 02:39:34 PST 2008
+
+	lib/Catalyst/Helper/Model/ISBNDB.pm:
+	lib/Catalyst/Model/ISBNDB.pm:
+	t/DUMMY.pm:
+	Updated all copyright dates and license information. All license
+	references are now to the dual-license arrangement (Artistic
+	2.0 and LGPL). Added use of "warnings" pragma to any modules
+	that didn't already have it.
+
+	Build.PL:
+	Updated the package version, fixed reference to required perl version
+	to remove use of v-string, and added some overlooked dependencies in
+	the "requires" parameter.
+
 0.20	Sun Oct 29 23:50:57 MST 2006
 
 	lib/Catalyst/Helper/Model/ISBNDB.pm:
