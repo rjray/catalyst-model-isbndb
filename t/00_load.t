@@ -8,8 +8,8 @@ use Test::More tests => 2;
 # Ensure that the modules load
 
 BEGIN {
-    use_ok('Catalyst::Model::XMLRPC');
-    use_ok('Catalyst::Helper::Model::XMLRPC');
+    use_ok('Catalyst::Model::ISBNDB');
+    use_ok('Catalyst::Helper::Model::ISBNDB');
 }
 
 exit;
