@@ -1,14 +1,12 @@
 ###############################################################################
 #
-# This file copyright (c) 2008 by Randy J. Ray, all rights reserved
+# This file copyright (c) 2008-2009 by Randy J. Ray, all rights reserved
 #
 # Copying and distribution are permitted under the terms of the Artistic
 # License 2.0 (http://www.opensource.org/licenses/artistic-license-2.0.php) or
 # the GNU LGPL (http://www.opensource.org/licenses/lgpl-license.php).
 #
 ###############################################################################
-#
-#   $Id$
 #
 #   Description:    A Catalyst model for providing access to the isbndb.com
 #                   web service.
@@ -25,7 +23,7 @@
 
 package Catalyst::Model::ISBNDB;
 
-use 5.006;
+use 5.008;
 use strict;
 use warnings;
 use vars qw($VERSION);
@@ -34,11 +32,14 @@ use base 'Catalyst::Model';
 use NEXT;
 use WebService::ISBNDB::API;
 
-$VERSION = "0.11";
+$VERSION = '0.12';
+$VERSION = eval $VERSION;  ## no critic
 
 BEGIN
 {
-    no strict 'refs';
+	# Don't let Perl::Critic whinge about this; I don't want to add
+	# Sub::Installer to my deps list...
+    no strict 'refs'; ## no critic
 
     my %map = ( Authors    => 'author',
                 Books      => 'book',
@@ -225,17 +226,50 @@ and create an API access key.
 
 L<WebService::ISBNDB::API>, L<WebService::ISBNDB::Iterator>
 
+=head1 BUGS
+
+Please report any bugs or feature requests to C<bug-catalyst-model-isbndb at
+rt.cpan.org>, or through the web interface at
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-Model-ISBNDB>. I will
+be notified, and then you'll automatically be notified of progress on your bug
+as I make changes.
+
+=head1 SUPPORT
+
+=over 4
+
+=item * RT: CPAN's request tracker
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-Model-ISBNDB>
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/Catalyst-Model-ISBNDB>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/Catalyst-Model-ISBNDB>
+
+=item * Search CPAN
+
+L<http://search.cpan.org/dist/Catalyst-Model-ISBNDB>
+
+=item * Source code on GitHub
+
+L<http://github.com/rjray/catalyst-model-isbndb/tree/master>
+
+=back
+
+=head1 COPYRIGHT & LICENSE
+
+This file and the code within are copyright (c) 2009 by Randy J. Ray.
+
+Copying and distribution are permitted under the terms of the Artistic
+License 2.0 (L<http://www.opensource.org/licenses/artistic-license-2.0.php>) or
+the GNU LGPL 2.1 (L<http://www.opensource.org/licenses/lgpl-2.1.php>).
+
 =head1 AUTHOR
 
-Randy J. Ray E<lt>rjray@blackperl.comE<gt>
-
-=head1 COPYRIGHT
-
-This module and the code within are copyright (c) 2006 by Randy J. Ray and
-released under the terms of the Artistic License
-(http://www.opensource.org/licenses/artistic-license.php). This
-code may be redistributed under either the Artistic License or the GNU
-Lesser General Public License (LGPL) version 2.1
-(http://www.opensource.org/licenses/lgpl-license.php).
+Randy J. Ray C<< <rjray@blackperl.com> >>
 
 =cut
