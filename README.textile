@@ -34,3 +34,30 @@ Please send any reports of problems or bugs to rjray@blackperl.com
 
 h2. CHANGES
 
+* t/00_signature.t (deleted)
+
+p{margin-bottom:2em}. Deprecated test.
+
+* ChangeLog (deleted)
+* MANIFEST (deleted)
+* Makefile (deleted)
+
+p{margin-bottom:2em}. Deprecated files.
+
+* t/01_pod.t
+* t/02_pod_coverage.t
+* t/03_meta.t (added)
+* t/04_minimumversion.t (added)
+* t/05_critic.t (added)
+
+p{margin-bottom:2em}. Three new test suites added, two modified to run as developer-only tests.
+
+* lib/Catalyst/Helper/Model/ISBNDB.pm
+* lib/Catalyst/Model/ISBNDB.pm
+
+p{margin-bottom:2em}. Fixed license docs, other code-cleanliness changes.
+
+* README (deleted)
+* README.textile (added)
+
+p{margin-bottom:2em}. Replace README with README.textile and associated logic in Build.PL.
